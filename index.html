@@ -122,6 +122,8 @@ nav .wrap { height: 70px; display: flex; align-items: center; justify-content: s
 .edu-row:last-child { border-bottom:1px solid var(--line); }
 .edu-school { font-size:1.08rem; font-weight:600; }
 .edu-degree { margin-top:4px; color:var(--muted); font-size:.91rem; }
+.role-list { margin-top:10px; padding-left:18px; color:var(--muted); font-size:.91rem; max-width:70ch; }
+.role-list li + li { margin-top:6px; }
 .edu-meta { color:var(--cyan); text-align:right; white-space:nowrap; font: .69rem var(--mono); }
 .ledger { display:grid; grid-template-columns:repeat(2,1fr); gap:0 70px; }
 .ledger-row { display:flex; justify-content:space-between; gap:20px; padding:15px 0; border-top:1px solid var(--line); font-size:.92rem; }
@@ -131,7 +133,7 @@ nav .wrap { height: 70px; display: flex; align-items: center; justify-content: s
 .cert-list { list-style:none; }
 .cert-list li { display:flex; justify-content:space-between; gap:20px; padding:15px 0; border-top:1px solid var(--line); font-size:.93rem; }
 .cert-list li:last-child { border-bottom:1px solid var(--line); }
-.cert-list span { color:var(--cyan); font: .65rem var(--mono); }
+.cert-list span { color:var(--cyan); font: .65rem var(--mono); text-align:right; }
 
 /* CONTACT */
 .contact-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:70px; align-items:start; }
@@ -166,6 +168,7 @@ nav .wrap { height: 70px; display: flex; align-items: center; justify-content: s
   .edu-row { grid-template-columns:1fr; }
   .edu-meta { text-align:left; }
   .cert-list li, .contact-list li { flex-direction:column; align-items:flex-start; }
+  .cert-list span { text-align:left; }
   .contact-list a { text-align:left; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -180,7 +183,7 @@ nav .wrap { height: 70px; display: flex; align-items: center; justify-content: s
   <div class="wrap">
     <a class="nav-mark" href="#top">M<span>.</span> Nath</a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li><li><a href="#work">Work</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#work">Work</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -217,15 +220,24 @@ nav .wrap { height: 70px; display: flex; align-items: center; justify-content: s
         <dt>Focus</dt><dd>Python, Django, full-stack web</dd>
         <dt>Status</dt><dd>Graduated, 2026</dd>
         <dt>Availability</dt><dd>Immediate — remote or on-site</dd>
-        <dt>Location</dt><dd>Balasore, Odisha, India</dd>
+        <dt>Location</dt><dd>Balasore, Odisha, India — open to Bengaluru</dd>
       </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="section-head"><span class="section-num">02</span><h2 class="section-title">Experience</h2></div>
+    <div>
+      <div class="edu-row"><div><div class="edu-school">Python Full Stack Intern — PYSPIDERS, Marathahalli</div><ul class="role-list"><li>Gained hands-on experience in Python Full Stack development with exposure to real-world software projects.</li><li>Collaborated in a professional team environment and strengthened practical software-development skills under mentorship.</li></ul></div><div class="edu-meta">Jan 2026 – Apr 2026</div></div>
     </div>
   </div>
 </section>
 
 <section class="section" id="work">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">02</span><h2 class="section-title">Selected projects</h2></div>
+    <div class="section-head"><span class="section-num">03</span><h2 class="section-title">Selected projects</h2></div>
     <p class="section-sub">A few projects that show my approach to full-stack development, APIs, databases, and user-focused web interfaces.</p>
     <div class="work-grid">
       <article class="card"><span class="card-index">01 / PROJECT</span><h3 class="card-title">Full Stack E-Commerce Website</h3><p class="card-desc">A complete e-commerce platform with user auth, product listings, shopping cart, and checkout, backed by a relational MySQL schema and a Django admin dashboard for managing inventory and orders.</p><div class="card-meta">PYTHON · DJANGO · MYSQL<br>BOOTSTRAP · JAVASCRIPT — 2025<br>DEPLOYED ON HEROKU</div></article>
@@ -237,7 +249,7 @@ nav .wrap { height: 70px; display: flex; align-items: center; justify-content: s
 
 <section class="section" id="education">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">03</span><h2 class="section-title">Education</h2></div>
+    <div class="section-head"><span class="section-num">04</span><h2 class="section-title">Education</h2></div>
     <div>
       <div class="edu-row"><div><div class="edu-school">Srinix College of Engineering, Balasore, Odisha</div><div class="edu-degree">B.Tech, Computer Science &amp; Engineering — GPA 7.83 / 10</div></div><div class="edu-meta">2026</div></div>
       <div class="edu-row"><div><div class="edu-school">Wisdom Science Higher Secondary School, Balasore</div><div class="edu-degree">Higher Secondary (CHSE) — 58%</div></div><div class="edu-meta">2020</div></div>
@@ -248,13 +260,13 @@ nav .wrap { height: 70px; display: flex; align-items: center; justify-content: s
 
 <section class="section" id="skills">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">04</span><h2 class="section-title">Skills &amp; tools</h2></div>
+    <div class="section-head"><span class="section-num">05</span><h2 class="section-title">Skills &amp; tools</h2></div>
     <div class="ledger">
       <div class="ledger-row"><span class="k">Languages</span><span class="v">PYTHON · JAVASCRIPT · HTML5 · CSS3</span></div>
-      <div class="ledger-row"><span class="k">Frameworks</span><span class="v">DJANGO · BOOTSTRAP · REACT (BASIC)</span></div>
-      <div class="ledger-row"><span class="k">Database</span><span class="v">MYSQL · SQLITE</span></div>
+      <div class="ledger-row"><span class="k">Frameworks</span><span class="v">DJANGO · BOOTSTRAP · REACT (BASIC) · NODE.JS (BASIC)</span></div>
+      <div class="ledger-row"><span class="k">Database</span><span class="v">MYSQL · SQLITE · SQL</span></div>
       <div class="ledger-row"><span class="k">Tools</span><span class="v">GIT · GITHUB · VS CODE</span></div>
-      <div class="ledger-row"><span class="k">Concepts</span><span class="v">OOP · REST APIS · AGILE</span></div>
+      <div class="ledger-row"><span class="k">Concepts</span><span class="v">OOP · REST APIS · RESPONSIVE DESIGN · AGILE</span></div>
       <div class="ledger-row"><span class="k">Deployment</span><span class="v">NETLIFY · HEROKU · AWS</span></div>
     </div>
   </div>
@@ -262,11 +274,11 @@ nav .wrap { height: 70px; display: flex; align-items: center; justify-content: s
 
 <section class="section" id="certifications">
   <div class="wrap">
-    <div class="section-head"><span class="section-num">05</span><h2 class="section-title">Certifications</h2></div>
+    <div class="section-head"><span class="section-num">06</span><h2 class="section-title">Certifications</h2></div>
     <ul class="cert-list">
       <li>Google Analytics Certification <span>GOOGLE, 2025</span></li>
       <li>Complete Python Bootcamp <span>UDEMY, 2025</span></li>
-      <li>Introduction to HTML <span>COURSERA</span></li>
+      <li>AWS Essentials Workshop (Participation) <span>AWS STUDENT BUILDER GROUP, MAHAKAL INSTITUTE OF TECHNOLOGY</span></li>
     </ul>
   </div>
 </section>
